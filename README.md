@@ -9,8 +9,8 @@ A reproducible computational study of how predictive evidence, decision costs, d
 |---|---|
 | **Current version** | v1.1.0 (revised after technical assessment of v1.0.0) |
 | **Kaggle notebook (executed, committed)** | https://www.kaggle.com/code/nannudatascience/warranted-reliance-and-uncertainty |
-| **Zenodo archive v1.1.0** | `<<PASTE NEW v1.1.0 DOI HERE>>` |
-| **Zenodo archive v1.0.0** | https://doi.org/10.5281/zenodo.24093962 |
+| **Zenodo archive (all versions, resolves to latest)** | https://doi.org/10.5281/zenodo.24093961 |
+| **Zenodo versions** | v1.0.0: https://doi.org/10.5281/zenodo.24093962 · v1.1.0: https://doi.org/10.5281/zenodo.24545162 |
 | **Target journal** | *Minds and Machines* (Springer Nature) |
 | **Anchor paper** | Ferrario, A. (2026). Being pragmatic about reliance and trust in artificial intelligence. *Minds and Machines*, 36, 5. https://doi.org/10.1007/s11023-025-09754-9 |
 
@@ -70,4 +70,4 @@ Made in response to a technical assessment of v1.0.0:
 
 ## Citation
 
-Tittamelanahalli Venkatesh, H., & Vig, S. (2026). *Warranted Reliance and Uncertainty* (Version 1.1.0) [Software and data]. Zenodo. `<<PASTE NEW v1.1.0 DOI HERE>>`
+Tittamelanahalli Venkatesh, H., & Vig, S. (2026). *Warranted Reliance and Uncertainty* (Version 1.1.0) [Software and data]. Zenodo. https://doi.org/10.5281/zenodo.24093961
