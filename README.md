@@ -54,7 +54,7 @@ Datasets are analysed separately and never merged.
 2. Use CPU (no accelerator) and **Run All**. A full run takes roughly 15–25 minutes.
 3. The final cell must print `Validated: 27 primary results; archived files: 138`.
 
-Splits, models and bootstrap draws use fixed seeds. Independent Kaggle runs of v1.1.0 reproduce all 14 primary tables byte-for-byte; other differences are at floating-point precision (≤ 2.2e-16). See `REPRODUCIBILITY.md`.
+Splits, models and bootstrap draws use fixed seeds. Independent Kaggle runs of v1.1.0 reproduce all 14 primary tables byte-for-byte; other differences are at floating-point precision (≤ 2.2e-16). 
 
 ## Changes in v1.1.0
 
