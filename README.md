@@ -7,7 +7,7 @@ A reproducible computational study of how predictive evidence, decision costs, d
 
 | | |
 |---|---|
-| **Current version** | v1.1.0 (revised after technical assessment of v1.0.0) |
+| **Current version** | v1.1.2: analysis v1.1.0 (revised after technical assessment of v1.0.0), executed notebook and committed-run archive |
 | **Kaggle notebook (executed, committed)** | https://www.kaggle.com/code/nannudatascience/warranted-reliance-and-uncertainty |
 | **Zenodo archive (all versions, resolves to latest)** | https://doi.org/10.5281/zenodo.24093961 |
 | **Zenodo versions** | v1.0.0: https://doi.org/10.5281/zenodo.24093962 · v1.1.0: https://doi.org/10.5281/zenodo.24545162 |
@@ -25,8 +25,9 @@ A reproducible computational study of how predictive evidence, decision costs, d
 
 | File | Description |
 |---|---|
-| `Project15_warranted_reliance_v1.1.0.ipynb` | Executed notebook: 31 code cells, 27 primary results (13 figures, 14 tables) |
-| `Project15_Revised_Results.zip` | Results archive, 138 files: figures (PDF + 300 dpi PNG), tables (CSV + PDF), plotted data, predictions, splits, captions, configuration, provenance, SHA-256 manifest |
+| `Project15_warranted_reliance_v1.1.0.ipynb` | Executed notebook with all cell outputs: 31 code cells, 27 primary results (13 figures, 14 tables) |
+| `Project15_Revised_Results.zip` | Results archive from the committed Kaggle run, 138 files: figures (PDF + 300 dpi PNG), tables (CSV + PDF), plotted data, predictions, splits, captions, configuration, provenance, SHA-256 manifest |
+| `REPRODUCIBILITY.md` | Agreement between the three Kaggle runs (archives and notebook outputs) |
 
 Result files are prefixed by revised research question (`R1_`–`R4_`, including `R2_UQ_*` and `R4_GB_*`); supporting audits use `S0x_`. `metadata/rq_mapping.csv` links every file to its legacy pilot identifier.
 
@@ -43,14 +44,14 @@ Datasets are analysed separately and never merged.
 2. Use CPU (no accelerator) and **Run All**. A full run takes roughly 15–25 minutes.
 3. The final cell must print `Validated: 27 primary results; archived files: 138`.
 
-Splits, models and bootstrap draws use fixed seeds. Re-running v1.0.0 reproduced every result table exactly. Only the embedded PDF timestamps differ.
+Splits, models and bootstrap draws use fixed seeds. Independent Kaggle runs of v1.1.0 reproduce all 14 primary tables byte-for-byte; other differences are at floating-point precision (≤ 2.2e-16). See `REPRODUCIBILITY.md`.
 
 ## Changes in v1.1.0
 
 Made in response to a technical assessment of v1.0.0:
 
 - **Always-defer baseline and all scenarios** (`R2_UQ_F3`, `R2_UQ_T1`). All nine prespecified (false-negative cost, deferral cost) scenarios are reported against an explicit always-defer baseline. In the primary setting both policies defer every case, so that setting alone is uninformative.
-- **Validated uncertainty bounds** (`R2_UQ_T3`). The estimand and assumptions (A1–A5) of the cluster-weighted Hoeffding bin bounds are documented. A Monte Carlo study of the implemented function gives simultaneous coverage of 0.996–1.000 against nominal 0.95, in both singleton and correlated-household regimes.
+- **Validated uncertainty bounds** (`R2_UQ_T3`). The estimand and assumptions (A1–A5) of the cluster-weighted Hoeffding bin bounds are documented. A Monte Carlo study of the implemented function gives simultaneous coverage of 0.996–1.000 against nominal 0.95, in both singleton and correlated-household regimes constructed to satisfy the assumptions. Coverage on the benchmark data remains conditional on those assumptions, including that, given the within-bin cluster counts, cluster contributions are independent with conditional weighted mean equal to the bin rate.
 - **Separated uncertainty sources** (`R2_UQ_T4`). Variability from refitting the model, calibrator and reliability evidence (50 whole-cluster bootstrap refits) is reported separately from conditional test-bootstrap intervals.
 - **Alignment.** Files are renamed to the revised RQs with a legacy mapping, revised-RQ analyses are labelled exploratory, and costs, fallback error and capacity are described as assumed scenario values throughout.
 
