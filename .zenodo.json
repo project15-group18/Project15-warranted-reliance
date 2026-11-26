@@ -1,0 +1,35 @@
+{
+  "title": "Warranted Reliance and Uncertainty in AI: reproducible experiments (Project 15)",
+  "upload_type": "software",
+  "description": "Reproducible computational study of when calibrated AI confidence warrants reliance: decision costs and deferral, finite-sample uncertainty in reliability evidence, distribution shift and recalibration, and subgroup burdens under limited human review. Executed Kaggle notebook, 138-file results archive and reproducibility record. Project 15, Group 18.",
+  "creators": [
+    {
+      "name": "Tittamelanahalli Venkatesh, Harshal"
+    },
+    {
+      "name": "Vig, Sagar"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "machine learning",
+    "calibration",
+    "uncertainty quantification",
+    "selective prediction",
+    "distribution shift",
+    "trustworthy AI",
+    "warranted reliance"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://www.kaggle.com/code/nannudatascience/warranted-reliance-and-uncertainty",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.1007/s11023-025-09754-9",
+      "relation": "references",
+      "resource_type": "publication-article"
+    }
+  ]
+}

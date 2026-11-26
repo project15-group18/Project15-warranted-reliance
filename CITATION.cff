@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+title: "Warranted Reliance and Uncertainty in AI: reproducible experiments (Project 15)"
+type: software
+authors:
+  - family-names: "Tittamelanahalli Venkatesh"
+    given-names: "Harshal"
+  - family-names: "Vig"
+    given-names: "Sagar"
+version: "1.1.2"
+date-released: "2026-11-26"
+doi: "10.5281/zenodo.24093961"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24093961"
+    description: "Concept DOI: all versions, resolves to the latest release"
+  - type: doi
+    value: "10.5281/zenodo.24546007"
+    description: "Release v1.1.2"
+repository-code: "https://github.com/project15-group18/Project15-warranted-reliance"
+url: "https://www.kaggle.com/code/nannudatascience/warranted-reliance-and-uncertainty"
+license: MIT
+abstract: >-
+  A reproducible computational study of when calibrated AI confidence warrants
+  reliance: decision costs and deferral, finite-sample uncertainty in reliability
+  evidence, distribution shift and recalibration, and subgroup burdens under
+  limited human review. Uses UCI credit-card default and ACSIncome data.
+keywords:
+  - machine learning
+  - calibration
+  - uncertainty quantification
+  - selective prediction
+  - distribution shift
+  - trustworthy AI
+  - warranted reliance
+references:
+  - type: article
+    authors:
+      - family-names: "Ferrario"
+        given-names: "Andrea"
+    title: "Being pragmatic about reliance and trust in artificial intelligence"
+    journal: "Minds and Machines"
+    volume: 36
+    year: 2026
+    doi: "10.1007/s11023-025-09754-9"

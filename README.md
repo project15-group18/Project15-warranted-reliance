@@ -1,5 +1,12 @@
 # Warranted Reliance and Uncertainty in AI
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24093961.svg)](https://doi.org/10.5281/zenodo.24093961)
+[![Kaggle](https://img.shields.io/badge/Kaggle-executed%20notebook-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/code/nannudatascience/warranted-reliance-and-uncertainty)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6-F7931E?logo=scikitlearn&logoColor=white)
+![Release](https://img.shields.io/badge/release-v1.1.2-blue)
+
 **Project 15 · Group 18 "Mission Possible"**
 Harshal Tittamelanahalli Venkatesh and Sagar Vig
 
@@ -28,6 +35,9 @@ A reproducible computational study of how predictive evidence, decision costs, d
 | `Project15_warranted_reliance_v1.1.0.ipynb` | Executed notebook with all cell outputs: 31 code cells, 27 primary results (13 figures, 14 tables) |
 | `Project15_Revised_Results.zip` | Results archive from the committed Kaggle run, 138 files: figures (PDF + 300 dpi PNG), tables (CSV + PDF), plotted data, predictions, splits, captions, configuration, provenance, SHA-256 manifest |
 | `REPRODUCIBILITY.md` | Agreement between the three Kaggle runs (archives and notebook outputs) |
+| `CITATION.cff` | Citation metadata (GitHub "Cite this repository" button) |
+| `.zenodo.json` | Zenodo archive metadata (title, authors, license, keywords) |
+| `LICENSE` | MIT License for the code |
 
 Result files are prefixed by revised research question (`R1_`–`R4_`, including `R2_UQ_*` and `R4_GB_*`); supporting audits use `S0x_`. `metadata/rq_mapping.csv` links every file to its legacy pilot identifier.
 
@@ -69,6 +79,14 @@ Made in response to a technical assessment of v1.0.0:
 - Null and unfavourable results are retained.
 - The philosophical argument and manuscript are developed separately in the write-up phase.
 
+## License
+
+- **Code** (notebook): [MIT License](LICENSE).
+- **Results archive** (figures, tables, derived data): CC BY 4.0. Please cite the Zenodo DOI.
+- **Source data** are not redistributed beyond derived outputs: UCI Default of Credit Card Clients (CC BY 4.0, https://doi.org/10.24432/C55S3H) and U.S. Census Bureau ACS PUMS (public domain), retrieved via the documented release files.
+
 ## Citation
 
-Tittamelanahalli Venkatesh, H., & Vig, S. (2026). *Warranted Reliance and Uncertainty* (Version 1.1.0) [Software and data]. Zenodo. https://doi.org/10.5281/zenodo.24093961
+Use the **"Cite this repository"** button on the right of this page, or:
+
+Tittamelanahalli Venkatesh, H., & Vig, S. (2026). *Warranted Reliance and Uncertainty in AI: reproducible experiments (Project 15)* (Version 1.1.2) [Software and data]. Zenodo. https://doi.org/10.5281/zenodo.24093961
